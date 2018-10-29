@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+		<body>
+			<h1>Welcome</h1>
+			Welcome! You can login here!
+			<button class="btn btn-success" type="button" name="button">Login</button>
+			<table class="table">
+			   <tr>
+              {% for obj in Product %}
+                <th> {{ obj.Brand }} </th>
+                <th> {{ obj.Color }} </th>
+                <th> {{ obj.Price }} </th>
+              {%  endfor  %}
+
+         </tr>
+				
+			</table>
+		</body>
+
+</html>
+
