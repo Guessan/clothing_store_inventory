@@ -21,4 +21,7 @@ def listProduct(requests):
 		'Product': queryset
 	}
 	return render(requests, 'ClothingInventoryProject/list_inventory.html', context)
-
+	
+#the url for about page
+def about(request):
+	return render(request, 'ClothingInventoryProject/about.html')

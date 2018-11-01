@@ -6,5 +6,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$/', views.index, name='index'),
     url(r'^homepage/', views.homepage, name='homepage'),
-
+    url(r'^about/', views.about, name='about'),
+ 
 ]
