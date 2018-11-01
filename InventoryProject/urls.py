@@ -20,10 +20,5 @@ from django.contrib import admin
 from ClothingInventoryProject.views import login, listProduct
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-<<<<<<< HEAD
     url(r'^ClothingInventoryProject/', include('ClothingInventoryProject.urls')),
-=======
-    url(r'^login/', login),
-    url(r'^list_product/', listProduct),
->>>>>>> master
 ]
