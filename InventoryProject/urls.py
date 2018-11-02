@@ -18,7 +18,9 @@ from django.contrib import admin
  
 
 from ClothingInventoryProject.views import login, listProduct
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ClothingInventoryProject/', include('ClothingInventoryProject.urls')),
+    url(r'^', include('ClothingInventoryProject.urls'))
 ]

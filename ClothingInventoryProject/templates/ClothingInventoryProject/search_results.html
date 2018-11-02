@@ -1,0 +1,19 @@
+<html>     
+    <head>         
+    <title>Clothes Search</title>     
+    </head>     
+    <body>       
+        <p>You searched for: <strong>{{ query }}</strong></p>
+   
+        {% if clothes %}           
+            <p>Found {{ clothes|length }} item{{ items|pluralize }}.</p>
+            <ul>               
+                {% for c in clothes %}               
+                <li>{{ c.Brand }}</li> 
+                {% endfor %}           
+            </ul>       
+        {% else %}           
+            <p>No Items matched your search criteria.</p>       
+        {% endif %}     
+    </body>
+</html>
