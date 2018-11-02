@@ -2,3 +2,12 @@
   
     font-size: 30px;
 }
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
