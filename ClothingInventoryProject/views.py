@@ -21,4 +21,25 @@ def listProduct(requests):
 		'Product': queryset
 	}
 	return render(requests, 'ClothingInventoryProject/list_inventory.html', context)
+	
+#the url for about page
+def about(request):
+	return render(request, 'ClothingInventoryProject/about.html')
 
+def search_form(request):
+	return render(request, 'ClothingInventoryProject/search_form.html')
+
+def search(request):
+	if 'q' in request.GET and request.GET['q']:
+		q = request.GET['q']
+		clothes = Clothes.objects.filter(Brand__icontains=q)
+		return render(request, 'ClothingInventoryProject/search_results.html',
+						{'clothes': clothes, 'query': q})
+	else:
+		message = 'You submitted an empty form'
+
+	return HttpResponse(message)
+
+def bad_search(request):
+	message = "You searched for: {}".format(request.GET['q'])
+	return HttpResponse(message)
