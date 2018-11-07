@@ -13,6 +13,12 @@ class ClothesAdmin(admin.ModelAdmin):
                     "Gender",
                     "Type",
                     )
+    list_filter = ("Brand",
+                    "Color",
+                    "Size",
+                    "Gender",
+                    "Type",
+                    )
     # create search bar in admin
     search_fields = ["Brand",
                      "Color",
