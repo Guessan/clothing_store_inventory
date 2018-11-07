@@ -1,5 +1,4 @@
 from django.db import models
-
 # Create your models here.
 from django.db import models
 
@@ -15,3 +14,4 @@ class Clothes(models.Model): # ProductCategory
 	def __str__(self):
 		# Going name "product object" according to title
 		return self.Brand
+	
