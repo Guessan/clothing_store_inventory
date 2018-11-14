@@ -5,6 +5,7 @@ from .models import Clothes
 
 # puts our columns into a tuple
 class ClothesAdmin(admin.ModelAdmin):
+    # create a display for our items
     list_display = ("Brand",
                     "Color",
                     "Price",
@@ -13,6 +14,7 @@ class ClothesAdmin(admin.ModelAdmin):
                     "Gender",
                     "Type",
                     )
+    # create a filter for a category
     list_filter = ("Brand",
                     "Color",
                     "Size",

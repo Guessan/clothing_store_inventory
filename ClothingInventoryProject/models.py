@@ -11,6 +11,7 @@ class Clothes(models.Model): # ProductCategory
 	Quantity 	= models.IntegerField()
 	Gender 		= models.CharField(max_length=6)
 	Type 		= models.CharField(max_length=10)
+	Image 		= models.ImageField(default="Null")
 
 	def __str__(self):
 		# Going name "product object" according to title
