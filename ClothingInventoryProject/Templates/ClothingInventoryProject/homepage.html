@@ -63,7 +63,7 @@
         </div>
         <div class="column">
             <img url="">
-            <p style="text-align: center">Description</p>
+            <p style="text-align: center"></p>
             <p style="text-align: center">Price</p>
             <button>COP</button>
         </div>
@@ -81,6 +81,19 @@
         </div>
     </div>
 
+    <tr>
+        <th>Brand</th>
+        <th>Color</th>
+        <th>Price</th>
+        <th>Quantit
+
+    {% for c in cloth %}               
+                        <td>{{ c.Brand }}</td> 
+                        <td>{{ c.Color }}</td>
+                        <td>{{ c.Price }}</td>
+                        <td>{{ c.Quantity}}</td>
+                </tr> 
+                    {% endfor %}         
 
 
 <h1>hello from homepage</h1>

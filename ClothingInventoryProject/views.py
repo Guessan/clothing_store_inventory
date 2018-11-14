@@ -7,8 +7,10 @@ def index(request):
 
 
 def homepage(request):
-    #return HttpResponse('Hellooooo')
-    return render(request, 'ClothingInventoryProject/homepage.html')
+	#return HttpResponse('Hellooooo')
+	cloth = Clothes.objects.all()
+	return render(request, 'ClothingInventoryProject/homepage.html')
+
 
 
 # Create your views here.
@@ -16,11 +18,8 @@ def login(requests):
 	return render(requests, 'ClothingInventoryProject/login.html')
 
 def listProduct(requests):
-	queryset = Clothes.objects.all()
-	context = {
-		'Product': queryset
-	}
-	return render(requests, 'ClothingInventoryProject/list_inventory.html', context)
+	# queryset = Clothes.objects.all()
+	return render(requests, 'ClothingInventoryProject/list_inventory.html')
 	
 #the url for about page
 def about(request):
