@@ -8,6 +8,10 @@ def index(request):
 
 def homepage(request):
     #return HttpResponse('Hellooooo')
+	queryset = Clothes.objects.all()
+	context = {
+		'clothes': queryset
+	}
     return render(request, 'ClothingInventoryProject/homepage.html')
 
 
