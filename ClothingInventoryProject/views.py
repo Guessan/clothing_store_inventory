@@ -8,8 +8,8 @@ def index(request):
 
 def homepage(request):
 	#return HttpResponse('Hellooooo')
-	cloth = Clothes.objects.all()
-	return render(request, 'ClothingInventoryProject/homepage.html')
+	cloth = Clothes.objects.get()
+	return render(request, 'ClothingInventoryProject/homepage.html', cloth)
 
 
 
