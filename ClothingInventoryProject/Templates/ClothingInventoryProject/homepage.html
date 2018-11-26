@@ -17,10 +17,13 @@
 
     <div class="ui two column centered relaxed grid">
         <div class="column">
+            {% for c in cloth %}
             <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
+            <p style="text-align: center">{{ c.Brand }}</p>
+            <p style="text-align: center">{{ c.Price }}</p>
+            <p style="text-align: center">{{ c.Type }}</p>
             <button>COP</button>
+            {%  endfor %}
         </div>
         <div class="column">
             <img url="">
@@ -85,7 +88,7 @@
         <th>Brand</th>
         <th>Color</th>
         <th>Price</th>
-        <th>Quantit
+        <th>Quantity</th>
 
     {% for c in cloth %}               
                         <td>{{ c.Brand }}</td> 

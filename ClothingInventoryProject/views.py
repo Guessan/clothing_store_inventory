@@ -8,9 +8,11 @@ def index(request):
 
 def homepage(request):
 	#return HttpResponse('Hellooooo')
-	cloth = Clothes.objects.get()
-	return render(request, 'ClothingInventoryProject/homepage.html', cloth)
-
+	queryset = Clothes.objects.all()
+	context = {
+		'cloth': queryset
+	}
+	return render(request, 'ClothingInventoryProject/homepage.html', context)
 
 
 # Create your views here.
