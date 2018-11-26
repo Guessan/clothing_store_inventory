@@ -11,93 +11,32 @@
         <div class="hero-text">
             <h1>WELCOME TO <img url=""></h1>
             <p>Stuff about us</p>
-            <button>COP</button>
+            
         </div>
     </div>
 
-    <div class="ui two column centered relaxed grid">
-        <div class="column">
+
+    
+    <div class="ui three column grid">
             {% for c in cloth %}
-            <img url="">
-            <p style="text-align: center">{{ c.Brand }}</p>
-            <p style="text-align: center">{{ c.Price }}</p>
-            <p style="text-align: center">{{ c.Type }}</p>
-            <button>COP</button>
+
+          
+                <div class="column">
+                  <div class="ui fluid card">
+                    <div class="image">
+                      <img src="http://www.loghouses.ir/wp-content/uploads/2016/03/grey_new_seo2-38-512.png">
+                    </div>
+                    <div class="content">
+                      <a class="header">{{ c.Brand }}</a>
+                      <a>{{ c.Price }}</a>
+                      <a>{{ c.Type }}</a>
+                    </div>
+                  </div>
+                </div>
+           
             {%  endfor %}
         </div>
-        <div class="column">
-            <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-        <div class="column">
-            <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-        <div class="column">
-            <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-        <div class="column">
-            <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-    </div>
-        
-    <div class="ui two column centered relaxed grid">
-        <div class="column">
-            <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-        <div class="column">
-            <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-        <div class="column">
-            <img url="">
-            <p style="text-align: center"></p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-        <div class="column">
-            <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-        <div class="column">
-            <img url="">
-            <p style="text-align: center">Description</p>
-            <p style="text-align: center">Price</p>
-            <button>COP</button>
-        </div>
-    </div>
-
-    <tr>
-        <th>Brand</th>
-        <th>Color</th>
-        <th>Price</th>
-        <th>Quantity</th>
-
-    {% for c in cloth %}               
-                        <td>{{ c.Brand }}</td> 
-                        <td>{{ c.Color }}</td>
-                        <td>{{ c.Price }}</td>
-                        <td>{{ c.Quantity}}</td>
-                </tr> 
-                    {% endfor %}         
-
+       
 
 <h1>hello from homepage</h1>
 
