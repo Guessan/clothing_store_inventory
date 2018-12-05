@@ -12,3 +12,15 @@ table, td, th {
     border: 1px solid black;
 }
 
+.ui.fixed.menu, .ui.top.fixed.menu{
+    height: 100px;
+    display: flex;
+
+}
+
+.nav{
+    margin-left:200px;
+    display: flex;
+    justify-content: space-between;
+    width:800px;
+}
