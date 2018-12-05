@@ -23,4 +23,17 @@ table, td, th {
     display: flex;
     justify-content: space-between;
     width:800px;
+
+}
+
+.sea{
+    margin-left: 100px;
+    margin-top:300px;
+    width: 400px;
+    display: flex;
+}
+
+form{
+    display: flex;
+    width: 300px;
 }
