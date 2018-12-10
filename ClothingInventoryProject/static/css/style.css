@@ -19,7 +19,7 @@ table, td, th {
 }
 
 .nav{
-    margin-left:200px;
+    margin-left:50px;
     display: flex;
     justify-content: space-between;
     width:800px;
@@ -36,4 +36,50 @@ table, td, th {
 form{
     display: flex;
     width: 300px;
+}
+
+img#logoimg{
+    width: 120px;
+    height: 80px;
+}
+
+#logo{
+    width: 100px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.ui.left.visible.sidebar{
+    padding-top: 200px;
+    color: orange;
+}
+
+.ui.inverted.menu .item, .ui.inverted.menu .item>a:not(.ui){
+    color: #f27b1a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a{
+    color: black;
+}
+
+
+
+.ui.three.column.grid{
+    margin-top: 70px;
+    margin-left: 40px;
+    max-width: 1100px;
+}
+
+.ui.form.mainsrch form{
+    width: 250px;
+    padding: 10px;
+    margin-left: 8px;
+    color: black;
+}
+
+.ui.button.msrch{
+    
+    text-align: center;
 }

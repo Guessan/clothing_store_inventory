@@ -55,9 +55,18 @@
 
   <body>
     <div class="ui vertical inverted left visible sidebar menu">
+      
+  
+            <div class="ui form mainsrch">
+                <form action="/search/" method="get" >
+                    <input type="text" name="q">
+                    <input type="submit" value="Search" class="ui button msrch inverted orange">
+                </form>
+                </div>
+        
         <a class="item">
-          Brand
-        </a>
+            Brand
+          </a>
         <a class="item">
           Color
         </a>
@@ -68,7 +77,8 @@
       <div class="ui top fixed menu">
 
           <div class="nav">
-          <h1>Logo</h1>
+          <h1 id="logo"><img src="/static/images/Wear_Us_Logo.png" id="logoimg" ></h1>
+          <h1></h1>
           <h1><a href="/ClothingInventoryProject/homepage">Home</a></h1>
           <h1><a href='/ClothingInventoryProject/about'>About</a></h1>
           <h1><a>Contact</a></h1>

@@ -24,12 +24,12 @@
                 <div class="column">
                   <div class="ui fluid card">
                     <div class="image">
-                      <img src="http://www.loghouses.ir/wp-content/uploads/2016/03/grey_new_seo2-38-512.png">
+                      <img src="http://www.loghouses.ir/wp-content/uploads/2016/03/grey_new_seo2-38-512.png" id="clothimg">
                     </div>
                     <div class="content">
                       <a class="header">{{ c.Brand }}</a>
-                      <a>{{ c.Price }}</a>
-                      <a href='/search/?q={{c.Type}}'>{{ c.Type }}</a>
+                      <a href='/search/?q={{c.Type}}'>{{ c.Type }}</a> <br>
+                      <a>${{ c.Price }}</a>
                     </div>
                   </div>
                 </div>
@@ -38,7 +38,7 @@
         </div>
        
 
-<h1>hello from homepage</h1>
+
 
 
 {% endblock %}
