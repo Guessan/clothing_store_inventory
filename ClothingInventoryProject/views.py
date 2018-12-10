@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Clothes
+from django.db.models import Q # allows to utilize complex query lookups
 # Create your views here.
 def index(request):
     return HttpResponse('Hellooooo')
@@ -27,13 +28,16 @@ def listProduct(requests):
 def about(request):
 	return render(request, 'ClothingInventoryProject/about.html')
 
+# renders search form
 def search_form(request):
 	return render(request, 'ClothingInventoryProject/search_form.html')
 
+# handles data and looks for matches in database
 def search(request):
 	if 'q' in request.GET and request.GET['q']:
 		q = request.GET['q']
-		clothes = Clothes.objects.filter(Brand__icontains=q)
+		# Complex queries using "&" and "|"
+		clothes = Clothes.objects.filter(Q(Brand__icontains=q) | Q(Color__icontains=q) | Q(Gender__icontains=q) | Q(Type__icontains=q))
 		return render(request, 'ClothingInventoryProject/search_results.html',
 						{'clothes': clothes, 'query': q})
 	else:
