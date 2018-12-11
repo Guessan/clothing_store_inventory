@@ -142,3 +142,20 @@ img#about{
     margin-bottom: 0;
     margin-left: 200px;
 }
+
+#sale{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100px;
+    font-size: 100px;
+    /* background-color: white; */
+    
+
+}
+
+#sale h1{
+    font-size: 70px;
+    margin-left: 30px;
+}

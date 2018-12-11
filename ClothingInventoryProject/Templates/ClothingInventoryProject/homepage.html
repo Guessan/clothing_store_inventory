@@ -2,19 +2,18 @@
 
 
 {% block content %}
-    
-    <nav class="header-nav-bag-wrapper">
-    
-    </nav>
-    
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>WELCOME TO <img url=""></h1>
-            <p>Stuff about us</p>
-            
-        </div>
-    </div>
+    <div id="sale">
+      <h1 class="animated bounceInDown">And <br>
+        it's 
+        <br>
+        not 
+        <br>
+        even 
+        <br>
+        FRIDAY</h1>
 
+      <img src="/static/images/sale.png" id="saleimg" class="animated shake">
+      </div>
 
     
     <div class="ui three column grid">
@@ -24,7 +23,22 @@
                 <div class="column">
                   <div class="ui fluid card">
                     <div class="image">
+                      {%if c.Type == "Shirt"%}
+                      <img src="http://res.freestockphotos.biz/pictures/15/15229-illustration-of-a-white-shirt-pv.png" id="clothimg">
+                      {%elif c.Type == "Hat"%}
+                      <img src="https://dumielauxepices.net/sites/default/files/hat-clipart-builder-633900-4473282.svg" id="clothimg">
+                      {%elif c.Type == "Jean"%}
+                      <img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Jeans-icon.png" id="clothimg">
+                      {%elif c.Type == "Jacket"%}
+                      <img src="http://cdn.onlinewebfonts.com/svg/img_59676.png" id="clothimg">
+                      
+                      {%elif c.Type == "Sweatpant"%}
+                      <img src="http://freevector.co/wp-content/uploads/2011/01/88824-sweatpants.png" id="clothimg">
+                      {%elif c.Type == "Shorts"%}
+                      <img src="http://www.transparentpng.com/download/shorts/green-swim-shorts-clip-art-at-picture-31.png" id="clothimg">
+                      {%else%}
                       <img src="http://www.loghouses.ir/wp-content/uploads/2016/03/grey_new_seo2-38-512.png" id="clothimg">
+                      {%endif%}
                     </div>
                     <div class="content">
                       <a class="header">{{ c.Brand }}</a>
