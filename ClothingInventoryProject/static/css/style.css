@@ -83,3 +83,62 @@ a{
     
     text-align: center;
 }
+
+#team {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    background-color: grey;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 2px 5px 50px 5px;
+    animation-delay: 1s;
+}
+
+#script {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+    color: black;
+    border-radius: 18px;
+    box-shadow: 2px 5px 50px;
+    animation-delay: 2s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+    padding: 2px;
+}
+
+img#about{
+    display: block;
+    margin: 140px auto;
+}
+
+#aboutdiv{
+    margin-left: 30px;
+    padding: 20px;
+    margin-top: 70px;
+    
+    max-width: 1100px;
+}
+
+#aboutext{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.shopping.cart.icon{
+    position: absolute;
+    margin-bottom: 0;
+    margin-left: 200px;
+}
