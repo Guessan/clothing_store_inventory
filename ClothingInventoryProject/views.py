@@ -58,14 +58,16 @@ def bad_search(request):
 	return HttpResponse(message)
 
 def brand(request):
-	queryset = Clothes.objects.all()
+	# Grab unique brands
+	queryset = Clothes.objects.values("Brand").distinct()
 	context = {
 		'cloth': queryset
 	}
 	return render(request, 'ClothingInventoryProject/brand.html', context)
 
 def color(request):
-	queryset = Clothes.objects.all()
+	# Grab unique colors
+	queryset = Clothes.objects.values("Color").distinct()
 	context = {
 		'cloth': queryset
 	}

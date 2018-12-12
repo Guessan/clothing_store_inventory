@@ -8,7 +8,7 @@ urlpatterns = [
     url(r'^homepage/', views.homepage, name='homepage'),
     url(r'^about/', views.about, name='about'),
     url(r'^brand/', views.brand),
-    url(r'^color/', views.brand),
+    url(r'^color/', views.color),
     url(r'^search-form/$', views.search_form),
     url(r'^search/$', views.search),
     

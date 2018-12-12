@@ -2,14 +2,20 @@
 
 
 {% block content %}
-
+<table class="ui celled table">
+        <thead>
+          <tr><th>Color</th>
+        </tr></thead>
+        <tbody>
                 {% for c in cloth %}
-       
-            <a href='/search/?q={{c.Color}}'>{{ c.Color }}</a> 
+          <tr>
+            <td data-label="Name"><a href='/search/?q={{c.Color}}'>{{ c.Color }}</a> <br></td>
             
-      
+          </tr>
           {%endfor%}
-       
+          
+        </tbody>
+      </table>
 
 
 
