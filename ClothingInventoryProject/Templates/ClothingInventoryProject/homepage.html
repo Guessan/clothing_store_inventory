@@ -27,9 +27,9 @@
                       <img src="http://res.freestockphotos.biz/pictures/15/15229-illustration-of-a-white-shirt-pv.png" id="clothimg">
                       {%elif c.Type == "Hat"%}
                       <img src="https://dumielauxepices.net/sites/default/files/hat-clipart-builder-633900-4473282.svg" id="clothimg">
-                      {%elif c.Type == "Jean"%}
+                      {%elif c.Type == "Jean" or "pant" in c.Type%}
                       <img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Jeans-icon.png" id="clothimg">
-                      {%elif c.Type == "Jacket"%}
+                      {%elif c.Type == "Jacket" or "Jacket" in c.Type %}
                       <img src="http://cdn.onlinewebfonts.com/svg/img_59676.png" id="clothimg">
                       
                       {%elif c.Type == "Sweatpant"%}
