@@ -16,3 +16,7 @@ class Clothes(models.Model): # ProductCategory
 	def __str__(self):
 		# Going name "product object" according to title
 		return self.Brand
+	# define function to present price half off
+	def halfOff(self):
+		# only return 2 digits after decimal place
+		return "{:.2f}".format(self.Price/2)

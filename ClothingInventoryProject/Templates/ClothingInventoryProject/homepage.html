@@ -43,7 +43,8 @@
                     <div class="content">
                       <a class="header">{{ c.Brand }}</a>
                       <a href='/search/?q={{c.Type}}'>{{ c.Type }}</a> <br>
-                      <a>${{ c.Price }}</a>
+                      <a class="markdown-price">${{ c.Price }}</a><a> ${{ c.halfOff }}</a>
+                      
                     </div>
                   </div>
                 </div>
