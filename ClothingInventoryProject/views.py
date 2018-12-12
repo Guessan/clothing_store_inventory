@@ -6,6 +6,14 @@ from django.db.models import Q # allows to utilize complex query lookups
 def index(request):
     return HttpResponse('Hellooooo')
 
+def layout(request):
+	queryset = Clothes.objects.all()
+
+	context = {
+		'cloth': queryset,
+		
+	}
+	return render(request, 'ClothingInventoryProject/layout.html', context)
 
 def homepage(request):
 	#return HttpResponse('Hellooooo')
@@ -48,3 +56,17 @@ def search(request):
 def bad_search(request):
 	message = "You searched for: {}".format(request.GET['q'])
 	return HttpResponse(message)
+
+def brand(request):
+	queryset = Clothes.objects.all()
+	context = {
+		'cloth': queryset
+	}
+	return render(request, 'ClothingInventoryProject/brand.html', context)
+
+def color(request):
+	queryset = Clothes.objects.all()
+	context = {
+		'cloth': queryset
+	}
+	return render(request, 'ClothingInventoryProject/color.html', context)

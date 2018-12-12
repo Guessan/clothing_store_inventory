@@ -1,0 +1,18 @@
+{% extends 'ClothingInventoryProject/layout.html'%}
+
+
+{% block content %}
+
+                {% for c in cloth %}
+       
+            <a href='/search/?q={{c.Color}}'>{{ c.Color }}</a> 
+            
+      
+          {%endfor%}
+       
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'ClothingInventoryProject/layout.html'%}
+
+
+{% block content %}
+<table class="ui celled table">
+        <thead>
+          <tr><th>Brand</th>
+        </tr></thead>
+        <tbody>
+                {% for c in cloth %}
+          <tr>
+            <td data-label="Name"><a href='/search/?q={{c.Brand}}'>{{ c.Brand }}</a> <br></td>
+            
+          </tr>
+          {%endfor%}
+          
+        </tbody>
+      </table>
+
+
+
+
+
+{% endblock %}

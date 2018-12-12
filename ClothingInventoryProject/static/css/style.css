@@ -174,3 +174,14 @@ i.close.icon{
 .markdown-price{
     text-decoration: line-through;
 }
+
+.ui.scrolling.dropdown{
+    color: white;
+    height: 70px;
+    width: 170px;
+
+}
+
+.ui.sidebar {
+    overflow: visible !important;
+}
