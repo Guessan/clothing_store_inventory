@@ -45,7 +45,7 @@ def search(request):
 	if 'q' in request.GET and request.GET['q']:
 		q = request.GET['q']
 		# Complex queries using "&" and "|", added order_by price functionality
-		clothes = Clothes.objects.filter(Q(Brand__icontains=q) | Q(Color__icontains=q) | Q(Gender__icontains=q) | Q(Type__icontains=q)).order_by("Price")
+		clothes = Clothes.objects.filter(Q(Brand__icontains=q) | Q(Color__icontains=q) | Q(Gender__icontains=q) | Q(Type__icontains=q) | Q(Size__icontains=q)).order_by("Price")
 		return render(request, 'ClothingInventoryProject/search_results.html',
 						{'clothes': clothes, 'query': q})
 	else:
