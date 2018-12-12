@@ -2,21 +2,18 @@
 
 
 {% block content %}
-<table class="ui celled table">
-        <thead>
-          <tr><th>Color</th>
-        </tr></thead>
-        <tbody>
+    <div class="ui three column grid" id="color">
                 {% for c in cloth %}
-          <tr>
-            <td data-label="Name"><a href='/search/?q={{c.Color}}'>{{ c.Color }}</a> <br></td>
-            
-          </tr>
+                <div class="column">
+                  <div class="ui fluid card clothcolor">
+            <div style="background-color:{{c.Color}}" class="color"><a href='/search/?q={{c.Color}}'>{{ c.Color }}</a> </div>
+                      
+                    </div>
+                    </div>
+      
           {%endfor%}
-          
-        </tbody>
-      </table>
-
+       
+      </div>
 
 
 

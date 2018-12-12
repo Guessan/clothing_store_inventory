@@ -185,3 +185,27 @@ i.close.icon{
 .ui.sidebar {
     overflow: visible !important;
 }
+
+.color{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center
+}
+
+.clothcolor{
+    width: 70px !important;
+    display: flex;
+    align-items: center;
+}
+
+#color{
+    margin-top:150px;
+    margin-left:160px;
+}
+
+.ui.celled.table{
+    margin-top: 150px;
+    width: 300px;
+    margin-left: 100px;
+}
