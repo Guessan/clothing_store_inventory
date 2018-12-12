@@ -72,3 +72,27 @@ def color(request):
 		'cloth': queryset
 	}
 	return render(request, 'ClothingInventoryProject/color.html', context)
+
+def gender(request):
+	# Grab unique gender
+	queryset = Clothes.objects.values("Gender").distinct()
+	context = {
+		'cloth': queryset
+	}
+	return render(request, 'ClothingInventoryProject/gender.html', context)
+
+def types(request):
+	# Grab unique types
+	queryset = Clothes.objects.values("Type").distinct()
+	context = {
+		'cloth': queryset
+	}
+	return render(request, 'ClothingInventoryProject/type.html', context)
+
+def size(request):
+	# Grab unique sizes
+	queryset = Clothes.objects.values("Size").distinct()
+	context = {
+		'cloth': queryset
+	}
+	return render(request, 'ClothingInventoryProject/size.html', context)

@@ -9,6 +9,9 @@ urlpatterns = [
     url(r'^about/', views.about, name='about'),
     url(r'^brand/', views.brand),
     url(r'^color/', views.color),
+    url(r'^type/', views.types),
+    url(r'^size/', views.size),
+    url(r'^gender/', views.gender),
     url(r'^search-form/$', views.search_form),
     url(r'^search/$', views.search),
     
