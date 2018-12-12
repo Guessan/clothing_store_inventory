@@ -10,7 +10,18 @@ Our project consists of a database of clothing items. Each of our members is res
   * Choose items to organize into an outfit.
   * Have a random outfit be generated and then have the ability to add them to the cart.
 
+![Alt Text](url)
+
 # Built with
 * Django
 * SQL
 * Semantic UI
+
+## Authors
+[David Charles](https://github.com/DCharles01)
+[Mesuara Kaleziq](https://github.com/mesuara)
+[Guessan Effi](https://github.com/Guessan)
+[Richard Jackson](https://www.linkedin.com/in/richard-jackson-518721168/)
+[Franklin Ajisogun](https://github.com/Franklin0603)
+[Adam]()
+
