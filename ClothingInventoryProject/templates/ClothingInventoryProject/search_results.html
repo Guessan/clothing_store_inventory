@@ -19,7 +19,7 @@
 
                         <div class="column">
                             <div class="ui fluid card">
-                              <div class="image">
+                              <div class="image" style="background-color:{{c.Color}}">
 
                                     {%if c.Type == "Shirt"%}
                                     <img src="http://res.freestockphotos.biz/pictures/15/15229-illustration-of-a-white-shirt-pv.png" id="clothimg">
@@ -41,7 +41,7 @@
                               <div class="content">
                                 <a class="header">{{ c.Brand }}</a>
                                 <a href='/search/?q={{c.Type}}'>{{ c.Type }}</a> </br>
-                                <a>{{ c.Price }}</a> 
+                                <a class="markdown-price">${{ c.Price }}</a><a> ${{ c.halfOff }}</a> 
                               </div>
                             </div>
                             </div>
