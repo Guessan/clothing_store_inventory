@@ -83,8 +83,8 @@
           <h1></h1>
           <h1><a href="/ClothingInventoryProject/homepage">Home</a></h1>
           <h1><a href='/ClothingInventoryProject/about'>About</a></h1>
-          <h1><a>Contact</a></h1>
-          <h1><i class="shopping cart icon"></i></h1>
+          <h1><a href="#ex1" rel="modal:open">Contact</a></h1>
+          <h1><a><i class="shopping cart icon"></i></a></h1>
           </div>
      
         
@@ -98,10 +98,57 @@
       {% block content %}
 
       {% endblock %}
-      </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+      <div class="ui modal test" id="ex1">
+          <a href="#" rel="modal:close"><i class="close icon"></i></a>
   
+          <div class="header">
+            Cotact Wear Us
+          </div>
+          <div class="image content">
+            <div class="ui medium image">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1231%20Lafayette%20Ave&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+            </div>
+           
+            <div class="description">
+              <h3 id="maptext">
+                  1231 Lafayette Ave 
+                  <br>
+                  #2l,
+                  <br>
+                   Bronx, NY 
+                   <br>
+                   10474
+              </h3>
+              
+            </div>
+          </div>
+          <div class="actions">
+           
+            <div class="ui positive right labeled icon button">
+                <a href="#" rel="modal:close">Close</a>
+              <i class="checkmark icon"></i>
+            </div>
+          </div>
+        
+         
+        
+        </div>
+           
+
+      </div>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+       <!-- <script type="text/javascript">
+          $(function(){
+           $("#test").click(function(){
+             $(".test").modal('hide');
+           });
+           $(".test").modal('hide')
+         });
+         </script> -->
+         
 
 
 
