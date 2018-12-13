@@ -10,9 +10,9 @@ Our project consists of a database of clothing items. Each of our members is res
   * Choose items to organize into an outfit.
   * Have a random outfit be generated and then have the ability to add them to the cart.
 
-![HomePage](/Screen Shot 2018-12-12 at 6.45.20 PM.png)
+![HomePage](/homepage.png)
 
-![About](/Screen Shot 2018-12-12 at 6.45.45 PM.png)
+![About](/about.png)
 # Built with
 * Django
 * SQL
