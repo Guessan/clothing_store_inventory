@@ -10,8 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
-  
+   
     <style>
       body, html {
           height: 100%;
@@ -90,7 +91,7 @@
           <h1></h1>
           <h1><a href="/ClothingInventoryProject/homepage">Home</a></h1>
           <h1><a href='/ClothingInventoryProject/about'>About</a></h1>
-          <h1><a>Contact</a></h1>
+          <h1><a href="#footer" >Contact</a></h1>
           <h1><i class="shopping cart icon"></i></h1>
           </div>
      
@@ -99,16 +100,36 @@
        </div>
       <div class="pusher">
         <!-- Site content !-->
-      
-    
+        
+        
      
       {% block content %}
 
+
+
       {% endblock %}
+
+      <div id="footer">
+        
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1231%20Lafayette%20Ave%20%232l%2C%20Bronx%2C%20NY%2010474&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/webdesign-bremen/"></a></div><style>.mapouter{text-align:right;height:400px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:500px;}</style>
+    
+       
+
+
+    </div>
+    <h3 id="addr">1231 Lafayette Ave
+            <br>
+             #2l,
+             <br> 
+             Bronx, NY 
+             <br>
+             10474</h3>
       </div>
+      </div>
+      
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-  
+     
 
 
 

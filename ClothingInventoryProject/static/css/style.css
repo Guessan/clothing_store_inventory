@@ -209,3 +209,15 @@ i.close.icon{
     width: 300px;
     margin-left: 100px;
 }
+
+#footer{
+    background: #f27b1a;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#addr{
+    margin-left: 200px;
+    font-size: 40px;
+}
